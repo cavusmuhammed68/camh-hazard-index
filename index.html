@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multi-Hazard Intelligence (MHI)</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Multi-Hazard Intelligence Dashboard</h1>
+    <p>Wind – Flood – Exposure – MHI Framework</p>
+</header>
+
+<section class="controls">
+    <label>Region:</label>
+    <select id="regionSelect"></select>
+
+    <label>Metric:</label>
+    <select id="metricSelect">
+        <option value="W_hat">Wind Hazard</option>
+        <option value="F_hat">Flood Exposure</option>
+        <option value="E_hat">Exposure</option>
+        <option value="MHI">Multi-Hazard Index</option>
+    </select>
+</section>
+
+<section>
+    <div id="timeseries"></div>
+</section>
+
+<section>
+    <div id="heatmap"></div>
+</section>
+
+<footer>
+    CAMH / KASVA Multi-Hazard Intelligence Framework
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
